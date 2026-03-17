@@ -1,0 +1,242 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav,
+h1,
+a {
+    display: inline-block;
+}
+.img
+h1 {
+    color: white;
+}
+
+.navbar {
+    position: relative;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    padding: 15px;
+    z-index: 2;
+}
+
+a {
+    color: gray;
+    cursor: pointer;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav {
+    margin-left: 76.9%;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 9px;
+}
+
+input {
+    width: 700px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+input::placeholder {
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+}
+
+.cat {
+    position: sticky;
+    top: 67px;
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.fas {
+    color: black;
+    padding: 10px;
+}
+
+.fas:hover {
+    color: white;
+}
+
+.box{
+    overflow-x: hidden;
+    display: flex;
+    width: 44%;
+}
+
+.box::-webkit-scrollbar{
+    display: none;
+}
+
+.scrollbar{
+    display:flex;
+    animation: scroll 15s infinite linear;
+    will-change: transform ;
+}
+
+@keyframes scroll {
+    from {translate: 0%;}
+    to {translate:-100% ;}
+}
+
+img{
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.img {
+    padding: 5px;
+    margin: 15px;
+    border: black solid 5px;
+    border-radius: 10px;
+    margin-left: 45px;
+}
+
+.img:hover {
+    cursor: pointer;
+    border-radius: 40px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    box-shadow: 15px 15px 15px black;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+.menupro {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menuprod {
+    padding: 5px;
+    margin: 15px;
+    border: black solid 5px;
+    border-radius: 10px;
+    margin-left: 45px;
+}
+
+.menuprod:hover {
+    cursor: pointer;
+    border-radius: 40px;
+    border: 2px solid black;
+    box-shadow: 0px 25px 30px black;
+    animation: menumove 2s linear infinite;
+    background: linear-gradient(90deg, rgb(47, 165, 207), rgb(255, 0, 183), yellow, green, rgb(27, 210, 192));
+    background-size: 200% 200%;
+}
+
+@keyframes menumove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+button {
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(90deg, rgb(206, 67, 187), rgb(23, 160, 170), rgb(206, 67, 187));
+    background-size: 200% 200%;
+    margin-top: 10px;
+}
+
+button:hover {
+    box-shadow: 0px 5px 5px rgb(91, 20, 124);
+    animation: buttonmove 2s linear infinite;
+    border-radius: 30px 10px 30px 10px;
+}
+
+@keyframes buttonmove {
+    0% {
+        background-position: 0% 50%;    
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.cart {
+    margin: 5px;
+}
+
+.cartt {
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cprod {
+    padding: 5px;
+    margin: 15px;
+    border: black solid 5px;
+    border-radius: 10px;
+    margin-left: 45px;
+    animation: menumove 2s linear infinite;
+    background: linear-gradient(90deg, rgb(47, 165, 207), rgb(255, 0, 183), yellow, green, rgb(27, 210, 192));
+    background-size: 200% 200%;
+}
+
+.cprod:hover {
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0px 25px 30px black;
+    border: 2px solid black;
+    animation: menumove 2s linear infinite;
+    background: linear-gradient(90deg, rgb(47, 165, 207), rgb(255, 0, 183), yellow, green, rgb(27, 210, 192));
+    background-size: 200% 200%;
+}
+
+.contect {
+    background-color: white;
+    margin-top: 150px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.cont {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.rupee {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+}
+
+h3 {
+    font-family: cursive;
+}
