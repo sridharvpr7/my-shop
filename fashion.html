@@ -8,30 +8,46 @@
 </head>
 
 <script>
-    function shownotify()
-    {
+    function shownotify() {
         alert("succesfully added to cart");
     }
 
-    function shownotifyy()
-    {
+    function shownotifyy() {
         alert("this website is still under developing");
+    }
+    
+    function darktheam(){
+        document.body.style.color = "gray";
+        document.body.style.backgroundColor="black";
+    }
+
+    function darkktheam(){
+        document.body.style.color="black";
+        document.body.style.backgroundColor="white";
     }
 </script>
 
 <body>
 
     <section class="navbar">
-        <h1 style="margin-left: 40px; color: black;"> My Shop</h1>
+        <h1 style="margin-left: 40px; color: white;"><img src="img/@icon2.png"
+                style="width: 35px; position: absolute; top: 10px; left: 10px;  border: 0px;">My Shop</h1>
         <div class="nav">
             <a href="index.html">Home</a> |
             <a href="#Products">Products</a> |
             <a href="#cart ">Cart</a> |
             <a href="#contect ">Contect</a> |
         </div>
+
+        <button onclick="darktheam()" class="dark">
+            <h3>🌙</h3>
+        </button>
+
+        <button onclick="darkktheam()" class="darkk">
+            <h3>☀️</h3>
+        </button>
     </section>
 
-    <img src="img/@icon2.png" width="40px" style=" z-index: 3; position: fixed; top: 7px; border: 0px solid; padding: 5px;">
 
     <section>
         <div class="sbox">
@@ -79,7 +95,7 @@
 
     <section class="cat">
         <a class="fas" href="#">FASHION</a>
-        <a class="fas" href="elect.html" >ELECTRONICS</a>
+        <a class="fas" href="elect.html">ELECTRONICS</a>
         <a class="fas" href="home appliances.html">HOME APPLIANCES</a>
         <a class="fas" href="furniture.html">FURNITURE</a>
         <a class="fas" href="toys.html">TOYS</a>
@@ -99,7 +115,7 @@
     <h3 class="gender">MEN</h3>
 
     <section>
-        <h1 id="men">aaa</h1>
+        <h1 id="men">   </h1>
         <div class="menu">
             <div>
                 <img class="img" src="img/fashion/@fashion1.jpeg" width="300px" height="400px">
@@ -408,7 +424,7 @@
 
 
     <section>
-        <h1 id="woman">aaa</h1>
+        <h1 id="woman">   </h1>
         <div class="menu">
             <div>
                 <img class="img" src="img/fashion/@fashion21.jpeg" width="300px" height="400px">
@@ -712,11 +728,11 @@
     </section>
 
 
-    <h3 class="gender">BOY KID</h3>
+    <h3 class="gender">BOYKID</h3>
     </h1>
 
     <section>
-        <h1 id="boys">aaa</h1>
+        <h1 id="boys">   </h1>
         <div class="menu">
             <div>
                 <img class="img" src="img/fashion/@fashion41.jpeg" width="300px" height="400px">
@@ -1020,11 +1036,11 @@
     </section>
 
 
-    <h3 class="gender">GIRL KID</h3>
+    <h3 class="gender">GIRLKID</h3>
 
 
     <section>
-        <h1 id="girls">aaa</h1>
+        <h1 id="girls">   </h1>
         <div class="menu">
             <div>
                 <img class="img" src="img/fashion/@fashion61.jpeg" width="300px" height="400px">
@@ -1289,8 +1305,7 @@
                     <button onclick="shownotify()">
                         <h4>add to cart</h4>
                     </button>
-                    <button onclick="shownotifyy()"
-                        <h4>BUY</h4>
+                    <button onclick="shownotifyy()" <h4>BUY</h4>
                     </button>
                 </center>
             </div>
@@ -1328,15 +1343,15 @@
     </section>
 
 
-    <div
-        style="display: inline-block; background-color: white; color: white; position: sticky; top:110px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-        <h3>aaaaaaaa</h3>
-    </div>
+    <h3 class="gender">PRODUCT</h3>
 
 
     <section id="Products" style="padding-top: 110px;">
         <center>
             <h1 style="color: black;">PRODUCTS</h1>
+        </center>
+        <center>
+            <h1>PRODUCTS</h1>
         </center>
     </section>
     <hr>
@@ -1428,9 +1443,15 @@
     </section>
 
 
+    <h3 class="gender">MYCART</h3>
+
+
     <section id="cart" style="padding-top: 110px;">
         <center>
             <h1 style="color: black;">MY CART</h1>
+        </center>
+        <center>
+            <h1>MY CART</h1>
         </center>
     </section>
     <hr>
@@ -1533,6 +1554,8 @@
         </div>
     </section>
 
+
+    <hr>
 
 
     <section id="contect" style="padding-top: 5px;">
