@@ -42,7 +42,7 @@ a:hover {
 .dark{
     color: white;
     padding: 0px;
-    background: linear-gradient(to left,black);
+    background: linear-gradient(to left,black,black);
     height: 40px;
     position: absolute;
     border: 1px solid white;
@@ -233,6 +233,15 @@ img {
     margin-top: 10px;
 }
 
+.contdet{
+    width: 300px;
+    height:40px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0px;
+    margin-top: 10px;
+}
+
 .cprod {
     padding: 5px;
     margin: 15px;
@@ -301,5 +310,49 @@ h3 {
 
 .rupee,
 h3 {
-    margin-left: 25 px
+    margin-left: 25px
+}
+
+@media (max-width: 425px) {
+
+    .navbar{
+       height: 60px;
+    }
+
+    .nav{
+        display: flex;
+        margin-left:40px;
+    }
+
+    a{
+        text-decoration: none;
+        margin-left: 15px;
+    }
+
+    .cat{
+        flex-wrap: wrap;
+        font-size: 15px;
+        position: sticky;
+        top: 95px;
+    }
+
+    input{
+        width: 300px;
+        height: 35px;
+        margin-top:40px;
+    }
+
+    .cenlogo{
+        height: 60px;
+    }
+
+    .img{
+        height: 150px;
+        width: 150px;
+        margin-left: 115px;
+    }
+
+    .menuprod{
+        margin-left: 25px;
+    }
 }

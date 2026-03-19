@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my cosmetic</title>
     <link rel="icon" href="img/@icon.png">
     <link rel="stylesheet" href="catstyle.css">
@@ -9,21 +10,25 @@
 
 <script>
     function shownotify() {
-        alert("succesfully addec to cart");
+        alert("successfully added to cart");
     }
 
     function shownotifyy() {
         alert("this website is still under developing");
     }
 
-    function darktheam(){
-        document.body.style.color = "gray";
-        document.body.style.backgroundColor="black";
+    function contcatmsg() {
+        alert("message send successfully");
     }
 
-    function darkktheam(){
-        document.body.style.color="black";
-        document.body.style.backgroundColor="white";
+    function darktheam() {
+        document.body.style.color = "gray";
+        document.body.style.backgroundColor = "black";
+    }
+
+    function darkktheam() {
+        document.body.style.color = "black";
+        document.body.style.backgroundColor = "white";
     }
 </script>
 
@@ -36,7 +41,7 @@
             <a href="index.html">Home</a> |
             <a href="#Products">Products</a> |
             <a href="#cart ">Cart</a> |
-            <a href="#contect ">Contect</a> |
+            <a href="#contect ">Contact</a> |
         </div>
 
         <button onclick="darktheam()" class="dark">
@@ -622,33 +627,26 @@
     <section id="contect" style="padding-top: 5px;">
         <div class="contect">
             <h2 class="cont">
-                CONTECT <br>
+                CONTACT <br>
                 myshop@online.shop.in <br>
                 91+12345-67890 <br>
             </h2>
-            <p class="cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, dolor, iusto qui minus illo
-                enim quam explicabo impedit accusantium inventore facere ea natus debitis aliquam fugit pariatur
-                nostrum, molestias soluta aut quo. Non nisi ipsam debitis. Consequatur sint unde libero odio error
-                earum, alias modi, praesentium eaque facere totam adipisci quas aperiam delectus aut! Laudantium nisi
-                aliquid nesciunt consequatur explicabo beatae? Autem consectetur quasi officiis tenetur aliquid non
-                maiores architecto blanditiis! Doloremque amet distinctio tempora nostrum maiores quis eius assumenda ab
-                molestias adipisci animi necessitatibus sequi sit dolorum quaerat, aut illo quas consectetur voluptatem
-                deleniti harum eaque magnam, officia enim? Numquam doloribus alias veritatis totam qui asperiores,
-                quibusdam eligendi molestiae nobis impedit enim quae veniam cum quia vel ut laborum officia dicta earum
-                eum vero dolores magni id! Cum inventore iste error? Dolorum officia ducimus molestias omnis quisquam
-                ullam soluta eum similique fugit, exercitationem aliquid, recusandae maxime minima sed temporibus. Odit,
-                iste nesciunt aliquid eligendi earum et, eveniet, doloremque minima voluptatum corrupti ex! Ullam ipsam
-                pariatur cum quam tenetur deserunt adipisci excepturi ipsum dignissimos magnam mollitia, ipsa eum velit
-                eveniet amet. Obcaecati commodi quasi quam consequuntur. Animi blanditiis dicta illum mollitia, harum
-                velit voluptates quia, perspiciatis assumenda similique fuga cumque error exercitationem. Quod veniam
-                quis iusto quidem recusandae! Voluptas eligendi, veniam excepturi veritatis corrupti ea alias molestiae
-                asperiores ex doloremque odio autem aliquid. Itaque, minima architecto. Animi blanditiis aliquid
-                nesciunt molestiae amet deserunt quidem expedita consequatur, magnam iure minus veritatis nostrum
-                ratione maiores explicabo, eos accusantium voluptatem ea vero, temporibus quos magni natus corporis
-                delectus. Dignissimos reprehenderit vero fuga beatae eos! Dicta ut et similique provident sapiente hic,
-                voluptate sed reprehenderit aut aspernatur temporibus iste non ullam est nemo consequatur enim dolorem
-                illo sequi. Numquam, qui doloribus dignissimos sequi, fugit in, quos commodi perferendis debitis aperiam
-                repellat rerum expedita earum.</p>
+            <p class="cont">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, perspiciatis modi veniam aperiam ipsa distinctio itaque rem dolore ducimus? Ea, minima! Sapiente molestiae inventore at, voluptatibus consequuntur ad minima, beatae amet ex perspiciatis eum. Quod incidunt ea fuga modi at nemo atque necessitatibus laudantium, illo eaque id tenetur dolore illum excepturi, error ullam molestiae perspiciatis? Doloremque eligendi consequuntur quasi, vitae distinctio unde velit dolores quo possimus. Sint recusandae iusto ducimus officia aliquid voluptate mollitia vel nihil amet asperiores natus voluptatem error sed, repellendus, explicabo esse. Eos magnam culpa ipsum reiciendis molestias natus corrupti labore similique laborum animi, dolores quis veritatis?
+            </p>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <form>
+                    <input placeholder="enter your name" class="contdet" type="text" required>
+                    <input placeholder="enter your email" class="contdet" type="email" required>
+                    <input placeholder="enter your mobile" class="contdet" type="number" required>
+                    <br>
+                    <input type="tel" placeholder="type your message"><br>
+                    <button type="submit" onclick="contcatmsg()">
+                        send
+                    </button>
+                </form>
+            </div>
 
             <footer>
                 <p style="color: white;" class="cont">&COPY;My Shop 2026 | ALL RIGHT RESEVED</p>
