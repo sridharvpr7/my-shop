@@ -384,9 +384,9 @@ h3 {
     }
 
     .gender{
-        background-color: red;
+        background-color: white;
         position: sticky;
-        top: 205px;
+        top: 210px;
         font-size: 13px;
         width: 61px;
     }

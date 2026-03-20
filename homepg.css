@@ -313,7 +313,7 @@ h3 {
     margin-left: 25px
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
 
     .navbar{
        height: 60px;
@@ -354,5 +354,12 @@ h3 {
 
     .menuprod{
         margin-left: 25px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .cprod{
+        width: 200px;
+        height: 200px;
     }
 }
