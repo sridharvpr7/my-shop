@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="img/@icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+
+    <script>
+        function validateForm() {
+            let u = document.getElementById("user").value;
+            let p = document.getElementById("pass").value;
+
+            if (u === "" || p === "") {
+                alert("Please fill all fields");
+                return false;
+            }
+            location.href = "index.html";
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div class="left">
+            <div class="summa">
+                <h3 style="margin: 0px;">My Shop</h3>
+                <h4>Shopping Panlama mappla</h4>
+                <p>Sign in to access your account, orders, and exclusive offers.</p>
+                <center>
+                    <img src="img/@icon2.png" alt="logo">
+                </center>
+            </div>
+        </div>
+        <div class="right">
+            <div class="summaa">
+                <h1>LOGIN</h1>
+                <p>Sign in to access your account, orders, and exclusive offers.</p>
+                <center>
+                    <button onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox'">
+                        Sing in with Google
+                    </button>
+                    <p style="color: black; margin-top: 10px;">--------------------or sign in
+                        with gmail--------------------</p>
+                    <form onsubmit="return validateForm()">
+
+                        <div>
+                            <h3 style="text-align: initial;">Gmail</h3>
+                            <input id="user" type="email" placeholder="enter your email">
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: initial;">Password</h3>
+                            <input id="pass" type="password" placeholder="min.8 character with special char">
+                        </div>
+
+                        <button type="submit" class="login">
+                            Login
+                        </button>
+
+                    </form>
+                </center>
+                <div style="display: flex; margin-top: 0px;">
+                    <input class="rem" type="checkbox" required>
+                    <p style="margin-top: 7px; margin-left: 5px;">Remember me</p>
+                    <p style="margin-top: 7px; margin-left: 130px;"><a style="color: white;"
+                            href="forget password.html">Forget password?</a></p>
+                </div>
+
+                <div style="display: flex; margin-left: 55px; position: absolute; top: 480px;">
+                    <input class="tc" type="checkbox" required>
+                    <p style="margin-top: 7px; margin-left: 5px;">I agree to Terms & Conditions</p>
+                </div>
+            </div>
+
+            <center>
+                <p style="font-size: 20px;">i don't have an account</p>
+                <div>
+                <a href="sign up .html" style="font-size: 20px; text-decoration: none; color: blue;">sign up hear</a>
+                </div>
+            </center>
+
+        </div>
+    </section>
+</body>
+
+</html>

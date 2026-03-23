@@ -26,6 +26,7 @@ h1 {
 a {
     color: gray;
     cursor: pointer;
+    text-decoration: none;
 }
 
 a:hover {
@@ -39,48 +40,60 @@ a:hover {
     margin-top: 9px;
 }
 
-.dark{
+.dark {
     color: white;
     padding: 0px;
-    background: linear-gradient(to left,black);
+    background: linear-gradient(to left, black, black);
     height: 40px;
     position: absolute;
     border: 1px solid white;
-    top: 16px;
-    right:60px;
+    top: 0px;
+    right: 60px;
     border-radius: 0px;
     width: 50px;
     height: 24px;
     z-index: 2;
 }
 
-.darkk{
+.darkk {
     color: white;
     padding: 0px;
-    background: linear-gradient(to left,black);
+    background: linear-gradient(to left, black);
     height: 40px;
     position: absolute;
     border: 1px solid white;
-    top: 16px;
-    right: 5px;
+    top: 25px;
+    right: 60px;
     border-radius: 0px;
     width: 50px;
     height: 24px;
     z-index: 1;
 }
 
-.dark:hover{
+.dark:hover {
     box-shadow: 0px 5px 5px black;
     border-radius: 0px;
-    background: linear-gradient(to left,white);
-    color: black ;
+    background: linear-gradient(to left, white);
+    color: black;
 }
 
-.darkk:hover{
+.darkk:hover {
     box-shadow: 0px 5px 5px black;
     border-radius: 0px;
-    background: linear-gradient(to left,white);
-    color: black ;
+    background: linear-gradient(to left, white);
+    color: black;
+}
+
+.pro {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
 }
 
 input {
@@ -285,9 +298,9 @@ button:hover {
     margin-top: 10px;
 }
 
-.contdet{
+.contdet {
     width: 300px;
-    height:40px;
+    height: 40px;
     cursor: pointer;
     border-radius: 10px;
     padding: 0px;
@@ -306,48 +319,48 @@ h3 {
 
 @media (max-width: 425px) {
 
-    .navbar{
-       height: 60px;
+    .navbar {
+        height: 60px;
     }
 
-    .nav{
+    .nav {
         display: flex;
-        margin-left:40px;
+        margin-left: 40px;
     }
 
-    a{
+    a {
         text-decoration: none;
         margin-left: 15px;
     }
 
-    .cat{
+    .cat {
         flex-wrap: wrap;
         font-size: 15px;
         position: sticky;
         top: 95px;
     }
 
-    input{
+    input {
         width: 300px;
         height: 35px;
-        margin-top:40px;
+        margin-top: 40px;
     }
 
-    #products{
+    #products {
         padding-top: 500px;
     }
 
-    .cenlogo{
+    .cenlogo {
         height: 60px;
     }
 
-    .img{
+    .img {
         height: 150px;
         width: 150px;
         margin-left: 115px;
     }
 
-    .menuprod{
+    .menuprod {
         margin-left: 25px;
     }
 }

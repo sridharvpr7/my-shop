@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="sign up.css">
+    <link rel="icon" href="img/@icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+
+    <script>
+        function validateForm() {
+            let u = document.getElementById("user").value;
+            let p = document.getElementById("pass").value;
+
+            if (u === "" || p === "") {
+                alert("Please fill all fields");
+                return false;
+            }
+            location.href = "login.html";
+            return false;
+        }
+
+        function acccreat()
+        {
+            alert("your account created succesfully")
+        }
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div class="left">
+            <div class="summa">
+                <h3 style="margin: 0px;">My Shop</h3>
+                <h4>Shopping Panlama mappla</h4>
+                <p>Sign in to access your account, orders, and exclusive offers.</p>
+                <center>
+                    <img src="img/@icon2.png" alt="logo">
+                </center>
+            </div>
+        </div>
+        <div class="right">
+            <div class="summaa">
+                <h1>LOGIN</h1>
+                <p>Sign in to access your account, orders, and exclusive offers.</p>
+                <center>
+                    <button onclick="window.location.href='https://mail.google.com/mail/u/0/#inbox'">
+                        Sing in with Google
+                    </button>
+                    <p style="color: black; margin-top: 10px;">--------------------or sign in
+                        with gmail--------------------</p>
+                    <form onsubmit="return validateForm()">
+
+                        <div>
+                            <h3 style="text-align: initial;">first name</h3>
+                            <input type="text" placeholder="enter your first name" required>
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: initial;">last name</h3>
+                            <input id="user" type="text" placeholder="enter your last name" required>
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: initial;">mobile number</h3>
+                            <input id="user" type="number" placeholder="enter your mobile number" required>
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: initial;">Gmail</h3>
+                            <input id="user" type="email" placeholder="enter your email" required>
+                        </div>
+
+                        <div>
+                            <h3 style="text-align: initial;">Password</h3>
+                            <input id="pass" type="password" placeholder="min.8 character with special char" required>
+                        </div>
+
+                        <button type="submit" class="login" onclick="acccreat()">
+                            Creat Account
+                        </button>
+
+                    </form>
+                </center>
+                <div style="display: flex; margin-top: 0px;">
+                    <input class="rem" type="checkbox" required>
+                    <p style="margin-top: 7px; margin-left: 5px;">Remember me</p>
+                </div>
+                <div style="display: flex; margin-left: 55px; position: absolute; top: 765px;">
+                    <input class="tc" type="checkbox" required>
+                    <p style="margin-top: 7px; margin-left: 5px;">I agree to Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
