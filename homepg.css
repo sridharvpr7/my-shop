@@ -53,12 +53,13 @@ a:hover {
     width: 50px;
     height: 24px;
     z-index: 2;
+    border-radius: 5px;
 }
 
 .darkk {
     color: white;
     padding: 0px;
-    background: linear-gradient(to left, black);
+    background: linear-gradient(to left, black, black);
     height: 40px;
     position: absolute;
     border: 1px solid white;
@@ -68,6 +69,7 @@ a:hover {
     width: 50px;
     height: 24px;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .dark:hover {
